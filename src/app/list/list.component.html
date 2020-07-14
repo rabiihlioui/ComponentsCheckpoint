@@ -1,9 +1,19 @@
-<div>
-    <app-item1 (chosenItem)="chosenItem($event)"></app-item1>
-</div>
-<div style="margin-top: 40px">
-    <app-item2 (chosenItem)="chosenItem($event)"></app-item2>
-</div>
-<div style="margin-top: 40px">
-    <app-item3 (chosenItem)="chosenItem($event)"></app-item3>
+<div class="col-md-4">
+     <div class="card-container manual-flip">
+        <div class="card">
+            <div class="fontListItem">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item px-4 d-flex justify-content-center">
+                        <app-item1 (chosenItem)="chosenItem($event)"></app-item1>
+                    </li>
+                    <li class="list-group-item px-4 d-flex justify-content-center">
+                        <app-item2 (chosenItem)="chosenItem($event)"></app-item2>
+                    </li>
+                    <li class="list-group-item px-4 d-flex justify-content-center">
+                        <app-item3 (chosenItem)="chosenItem($event)"></app-item3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> 
 </div>
